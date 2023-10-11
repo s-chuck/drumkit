@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url('image.jpg');
+    background-size: cover;
+}
+.cont {
+    border: 2px solid #000; /* Add a 2px border */
+    width: 100px; /* Set the width */
+    height: 70px; /* Set the height */
+    font-size: 22px;
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 10px;
+    text-shadow: 0 0 .5rem black;
+    border: .3rem solid black;
+}
+.cont p{
+    color:brown;
+    margin-top: 20px;
+}
+.key-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pressed {
+    transform: translateY(2px); 
+    border-color: red; 
+  }
+  

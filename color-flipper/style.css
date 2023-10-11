@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    color: black;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+#btn{
+    color:red;
+    text-transform: capitalize;
+    height: 50px;
+    width: 200px;
+    font-weight: bold;
+    cursor: pointer;
+}
