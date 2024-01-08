@@ -1,0 +1,43 @@
+
+body{
+    margin-top: 7rem;
+    display: flex;
+    /* height: 100vh; */
+    justify-content: center;
+    /* align-items: center; */
+    background-color: lightgray;
+}
+
+.heading{
+    margin-top: -2rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1rem;
+}
+.first{
+    border-radius: 3%;
+    background-color: white;
+    padding: 2rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 20px black ;
+    
+}
+#Bill, #Tip{
+    margin: .5rem 0rem;
+    padding: 8px;
+}
+/* #Tip{
+    margin-top: .5rem;
+    padding: 3px;
+} */
+.btn{
+    /* height: 2rem; */
+    margin-top: 1rem;
+    background-color: rgb(38, 128, 0);
+    text-transform: uppercase;
+    color: white;
+    padding: .6rem;
+    font-size: large;
+}

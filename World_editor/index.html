@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>World Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>World Editor</h1>
+    <!-- canvas element in html is used to draw objects or render graphics in a web page using javascript. -->
+    <canvas id="myCanvas"></canvas>
+    <div id="controls">
+        <!-- here we are using paranthesis after addRandomPoints we don't do it in react but in js we have to pass the paranthesis too ex . in react onClick = "addRandomPoint" -->
+        <button onclick="addRandomPoint()">Add point</button>
+    </div>
+
+    <script src="js/math/graph.js"></script>
+    <script src="js/primitives/point.js"></script>
+    <script src="js/primitives/segment.js"></script>
+    <script>
+        function addRandomPoint() {
+            //what happens when the button is clicked above this function gets executed first it would call another method named addPoint() then after that it pushes the new point into the existing point array after that it deletes the whole canvas and redraws the whole thing with the help of graph.draw(ctx).
+            graph.addPoint(
+                new Point(Math.random() * myCanvas.width, Math.random() * myCanvas.height)
+            );
+
+            ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
+            graph.draw(ctx);
+        }
+        myCanvas.width = 600;
+        myCanvas.height = 600;
+        // The getContext("2d") methods provides methods and properties to draw on the canvas , the 2d specifies that we can only draw in 2 dimensions like line , circle, text etc.
+        const ctx = myCanvas.getContext("2d");
+
+        //creating a points in graphs 
+        const p1 = new Point(200, 200);
+        const p2 = new Point(500, 200);
+        const p3 = new Point(400, 400);
+        const p4 = new Point(100, 300);
+
+        //creating segments in the canvas or edges.
+        const s1 = new Segement(p1, p2);
+        const s2 = new Segement(p4, p1);
+        const s3 = new Segement(p2, p4);
+        const s4 = new Segement(p3, p2);
+
+        //here ctx = context , the context is like a background for particular event. Now we are drawing a graph around the particular background.
+        const graph = new Graph([p1, p2, p3, p4], [s1, s2, s3, s4]);
+        graph.draw(ctx);
+
+        
+    </script>
+</body>
+
+</html>
