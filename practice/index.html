@@ -9,15 +9,12 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <div class="first">
-            <div class="heading"><h1>Tip Calculator</h1></div>
-            <p>Enter the bill Amount and tip percentage to Calculate the total.</p>
-            <label for="Bill">Bill Amount:</label>
-            <input type="number" id="Bill" name="Bill" onchange="update()">
-            <label for="Tip">Tip percentage:</label>
-            <input type="number" id="Tip" name="Tip" onchange="another()">
-            <Button class="btn" onclick="calculateTotal()">Calculate</Button>
-            <p class="Total">Total: </p>
+        <div class="main">
+            <h1>Age Calculator</h1>
+            <p>Enter your date of birth:</p>
+            <input type="date" id="dob">
+            <button class="calculate" onclick="findTheAge()">Calculate Age</button>
+            <h2 class="result"></h2>
         </div>
     </body>
 </html>

@@ -1,43 +1,40 @@
-
-body{
-    margin-top: 7rem;
+body {
+    background-color: lightgray;
     display: flex;
-    /* height: 100vh; */
     justify-content: center;
     /* align-items: center; */
-    background-color: lightgray;
+    height: 100vh;
 }
 
-.heading{
-    margin-top: -2rem;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -1rem;
-}
-.first{
-    border-radius: 3%;
+.main {
+    margin: 5rem;
     background-color: white;
-    padding: 2rem;
-    width: 30rem;
     display: flex;
     flex-direction: column;
-    box-shadow: 3px 3px 20px black ;
-    
+    align-items: center;
+    border: 3px solid black;
+    padding: 10px;
+    width: 25rem;
+    height: 15rem;
 }
-#Bill, #Tip{
-    margin: .5rem 0rem;
-    padding: 8px;
+
+.main h1{
+    margin: 0;
 }
-/* #Tip{
-    margin-top: .5rem;
-    padding: 3px;
-} */
-.btn{
-    /* height: 2rem; */
-    margin-top: 1rem;
-    background-color: rgb(38, 128, 0);
-    text-transform: uppercase;
+.main p {
+    margin: 1rem 0rem;
+    font-weight: bolder;
+    font-size: large; /* Reset margin for h1 and p within .main */
+}
+
+.calculate {
+    background-color: #007BFF;
+    width: 8rem;
     color: white;
-    padding: .6rem;
-    font-size: large;
+    padding: .5rem;
+}
+
+#dob {
+    margin: .8rem 0rem;
+    width: 20rem;
 }
